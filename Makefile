@@ -5,9 +5,9 @@ all : $(NAME)
 $(NAME):
 	@cmake -Bbuild . 
 	@cmake --build build --config Debug
-	@mv ./build/Debug/VULKAN_TUTORIAL.exe ./VULKAN_TUTORIAL.exe
 	@echo [SUCCESS] $@ compiled successfully!
 
+# @mv D:/KOO/Vulkan/Tutorial/build/Debug/VULKAN_TUTORIAL.exe ./VULKAN_TUTORIAL.exe
 clean :
 	@rm -rf ./build/
 	@echo [CLEAN] Object files have been removed!

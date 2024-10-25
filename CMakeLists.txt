@@ -27,7 +27,9 @@ target_link_libraries(${PROJECT_NAME} PUBLIC ${DEP_LIBS})
 target_compile_definitions(${PROJECT_NAME} PUBLIC
 WINDOW_NAME="${WINDOW_NAME}"
 WINDOW_WIDTH=${WINDOW_WIDTH}
-WINDOW_HEIGHT=${WINDOW_HEIGHT})
+WINDOW_HEIGHT=${WINDOW_HEIGHT}
+# NDEBUG)
+)
 
 # Dependency들이 먼저 build 될 수 있게 관계 설정 / 뒤에서 부터 컴파일
 add_dependencies(${PROJECT_NAME} ${DEP_LIST})
